@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCDCEAE8-FE79-445A-B3C6-4BD36EDE5875}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Teachers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Teachers.Designer.cs">
+      <DependentUpon>Add Teachers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmissionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmissionForm.Designer.cs">
+      <DependentUpon>AdmissionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendanceRecord.Designer.cs">
+      <DependentUpon>AttendanceRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collage Management System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collage Management System.Designer.cs">
+      <DependentUpon>Collage Management System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messagebox.Designer.cs">
+      <DependentUpon>Messagebox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeRegistration.Designer.cs">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee Form.Designer.cs">
+      <DependentUpon>Fee Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PendingFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendingFee.Designer.cs">
+      <DependentUpon>PendingFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PendingFeeRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendingFeeRecord.Designer.cs">
+      <DependentUpon>PendingFeeRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Details.Designer.cs">
+      <DependentUpon>Student Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAttendance.Designer.cs">
+      <DependentUpon>StudentAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher Details.Designer.cs">
+      <DependentUpon>Teacher Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upgrade Student Standard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upgrade Student Standard.Designer.cs">
+      <DependentUpon>Upgrade Student Standard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Teachers.resx">
+      <DependentUpon>Add Teachers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmissionForm.resx">
+      <DependentUpon>AdmissionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceRecord.resx">
+      <DependentUpon>AttendanceRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collage Management System.resx">
+      <DependentUpon>Collage Management System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messagebox.resx">
+      <DependentUpon>Messagebox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeRegistration.resx">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee Form.resx">
+      <DependentUpon>Fee Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PendingFee.resx">
+      <DependentUpon>PendingFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PendingFeeRecord.resx">
+      <DependentUpon>PendingFeeRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Student Details.resx">
+      <DependentUpon>Student Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAttendance.resx">
+      <DependentUpon>StudentAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher Details.resx">
+      <DependentUpon>Teacher Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upgrade Student Standard.resx">
+      <DependentUpon>Upgrade Student Standard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BussinessLayer\BussinessLayer.csproj">
+      <Project>{5b91f5b8-1ee8-4815-b88d-bd775a11ef21}</Project>
+      <Name>BussinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBAccessLayer\DBAccessLayer.csproj">
+      <Project>{81C072DC-3B64-403D-9A8E-1FFAA96FC0F9}</Project>
+      <Name>DBAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\abouticon.png" />
+    <Content Include="icons\admissions-message-logo.png" />
+    <Content Include="icons\exiticon.png" />
+    <Content Include="icons\icon-fees.png" />
+    <Content Include="icons\icon_djt_mb_im_a_teacher_296691.png" />
+    <Content Include="icons\remstdicon.png" />
+    <Content Include="icons\stdicon.png" />
+    <Content Include="Resources\ADMISSION-Logo.png" />
+    <Content Include="Resources\admission1.png" />
+    <Content Include="Resources\banara_schoolImg21122016104034am.jpg" />
+    <Content Include="Resources\bit.png" />
+    <None Include="Resources\colage.png" />
+    <Content Include="Resources\content_1417713014--international-school %281%29.jpg" />
+    <Content Include="Resources\deleteStd.png" />
+    <Content Include="Resources\ee9b705677466e520fdbd5892bba8a19.png" />
+    <Content Include="Resources\feesLogo.png" />
+    <Content Include="Resources\icp1.jpg" />
+    <Content Include="Resources\icpField.png" />
+    <Content Include="Resources\icpFieldr.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\images %281%29.jpg" />
+    <None Include="Resources\images %281%29.jpeg" />
+    <None Include="Resources\images %285%29.jpeg" />
+    <None Include="Resources\img.jpg" />
+    <Content Include="Resources\kis.png" />
+    <Content Include="Resources\login-system-icon-13.png" />
+    <Content Include="Resources\login.png" />
+    <None Include="Resources\pppp.jpg" />
+    <Content Include="Resources\register-button0.png" />
+    <Content Include="Resources\registerEmp.png" />
+    <Content Include="Resources\search-flat.png" />
+    <Content Include="Resources\theme-preview01.png" />
+    <Content Include="Resources\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
